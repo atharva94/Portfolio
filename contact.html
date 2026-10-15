@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Get in touch with Atharva Pethkar about a project, opportunity, or idea."
+    />
+    <meta name="theme-color" content="#11120f" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>Let’s talk — Atharva Pethkar</title>
+  </head>
+  <body class="contact-page">
+    <div class="site-shell">
+      <header class="site-header">
+        <a class="wordmark" href="/" aria-label="Atharva Pethkar, home">
+          <span class="wordmark-mark">A<span>.</span></span>
+          <span class="wordmark-name">Atharva Pethkar</span>
+        </a>
+        <a class="header-contact" href="/">Back to portfolio <span aria-hidden="true">↗</span></a>
+      </header>
+
+      <main class="contact-layout section-wrap">
+        <section class="contact-intro" aria-labelledby="contact-title">
+          <p class="eyebrow"><span class="status-dot"></span> A GOOD PLACE TO START</p>
+          <h1 id="contact-title">Let’s make<br />something <span class="headline-accent">matter.</span></h1>
+          <p>Tell me a little about what you have in mind. Share your contact details and I’ll get back to you.</p>
+          <div class="contact-aside-note">
+            <span class="contact-aside-mark" aria-hidden="true">↳</span>
+            <span>Project, opportunity, or just a good question.<br />I’m listening.</span>
+          </div>
+        </section>
+
+        <section class="contact-form-panel" aria-label="Send a message">
+          <form id="contact-form">
+            <label class="form-field" for="name">
+              <span>Your name <span class="required-mark" aria-hidden="true">*</span></span>
+              <input id="name" name="name" autocomplete="name" minlength="2" maxlength="120" placeholder="How should I address you?" required />
+            </label>
+
+            <div class="form-field-row">
+              <label class="form-field" for="email">
+                <span>Email address <span class="required-mark" aria-hidden="true">*</span></span>
+                <input id="email" name="email" type="email" autocomplete="email" maxlength="254" placeholder="you@example.com" required />
+              </label>
+              <label class="form-field" for="phone">
+                <span>Phone <span class="optional-mark">OPTIONAL</span></span>
+                <input id="phone" name="phone" type="tel" autocomplete="tel" maxlength="40" placeholder="+1 (555) 000-0000" />
+              </label>
+            </div>
+
+            <label class="form-field" for="interest">
+              <span>What would you like to discuss? <span class="required-mark" aria-hidden="true">*</span></span>
+              <select id="interest" name="interest" required>
+                <option value="" disabled selected>Select a topic</option>
+                <option>Project or product</option>
+                <option>Full-time opportunity</option>
+                <option>Freelance or consulting</option>
+                <option>Something else</option>
+              </select>
+            </label>
+
+            <label class="form-field" for="message">
+              <span>Your message <span class="required-mark" aria-hidden="true">*</span></span>
+              <textarea id="message" name="message" minlength="20" maxlength="5000" rows="5" placeholder="What are you looking to build, solve, or explore?" required></textarea>
+              <span class="field-hint">A little context helps me give you a useful reply.</span>
+            </label>
+
+            <div class="form-trap" aria-hidden="true">
+              <label for="website">Leave this field empty</label>
+              <input id="website" name="website" tabindex="-1" autocomplete="off" />
+            </div>
+
+            <div class="form-submit-row">
+              <button class="button button-primary" type="submit">
+                <span class="submit-label">Send your message</span><span aria-hidden="true">↗</span>
+              </button>
+              <p class="form-privacy">Your details are only used<br />to reply to your message.</p>
+            </div>
+            <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
+          </form>
+        </section>
+      </main>
+
+      <footer class="site-footer section-wrap">
+        <a class="footer-mark" href="/" aria-label="Back to portfolio">A<span>.</span></a>
+        <p>MADE WITH INTENTION <span>·</span> ATHARVA PETHKAR</p>
+        <a class="back-to-top" href="/">BACK TO PORTFOLIO ↑</a>
+      </footer>
+    </div>
+    <script type="module" src="/src/contact.js"></script>
+  </body>
+</html>
